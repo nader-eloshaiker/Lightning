@@ -12,10 +12,11 @@
 		125E37E91748F22A00A4F257 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125E37E81748F22A00A4F257 /* CoreGraphics.framework */; };
 		125E37EF1748F22A00A4F257 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 125E37ED1748F22A00A4F257 /* InfoPlist.strings */; };
 		125E37F11748F22A00A4F257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E37F01748F22A00A4F257 /* main.m */; };
-		125E37F51748F22A00A4F257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E37F41748F22A00A4F257 /* AppDelegate.m */; };
 		125E37F71748F22A00A4F257 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 125E37F61748F22A00A4F257 /* Default.png */; };
 		125E37F91748F22A00A4F257 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 125E37F81748F22A00A4F257 /* Default@2x.png */; };
 		125E37FB1748F22A00A4F257 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 125E37FA1748F22A00A4F257 /* Default-568h@2x.png */; };
+		125E38051748F2BD00A4F257 /* Lightning.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E38021748F2BD00A4F257 /* Lightning.m */; };
+		125E38061748F2BD00A4F257 /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 125E38031748F2BD00A4F257 /* lightning.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +28,13 @@
 		125E37EE1748F22A00A4F257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		125E37F01748F22A00A4F257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		125E37F21748F22A00A4F257 /* Lightning-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lightning-Prefix.pch"; sourceTree = "<group>"; };
-		125E37F31748F22A00A4F257 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		125E37F41748F22A00A4F257 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		125E37F61748F22A00A4F257 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		125E37F81748F22A00A4F257 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		125E37FA1748F22A00A4F257 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		125E38011748F2BD00A4F257 /* Lightning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lightning.h; sourceTree = "<group>"; };
+		125E38021748F2BD00A4F257 /* Lightning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lightning.m; sourceTree = "<group>"; };
+		125E38031748F2BD00A4F257 /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning.png; sourceTree = "<group>"; };
+		125E38041748F2BD00A4F257 /* LightningStrikeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightningStrikeDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +81,10 @@
 		125E37EA1748F22A00A4F257 /* Lightning */ = {
 			isa = PBXGroup;
 			children = (
-				125E37F31748F22A00A4F257 /* AppDelegate.h */,
-				125E37F41748F22A00A4F257 /* AppDelegate.m */,
+				125E38011748F2BD00A4F257 /* Lightning.h */,
+				125E38021748F2BD00A4F257 /* Lightning.m */,
+				125E38031748F2BD00A4F257 /* lightning.png */,
+				125E38041748F2BD00A4F257 /* LightningStrikeDelegate.h */,
 				125E37EB1748F22A00A4F257 /* Supporting Files */,
 			);
 			path = Lightning;
@@ -154,6 +159,7 @@
 				125E37F71748F22A00A4F257 /* Default.png in Resources */,
 				125E37F91748F22A00A4F257 /* Default@2x.png in Resources */,
 				125E37FB1748F22A00A4F257 /* Default-568h@2x.png in Resources */,
+				125E38061748F2BD00A4F257 /* lightning.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				125E37F11748F22A00A4F257 /* main.m in Sources */,
-				125E37F51748F22A00A4F257 /* AppDelegate.m in Sources */,
+				125E38051748F2BD00A4F257 /* Lightning.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
