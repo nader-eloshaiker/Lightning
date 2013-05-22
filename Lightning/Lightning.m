@@ -119,7 +119,7 @@ void ccVertexTexLineToPolygon(CGPoint *points, float stroke, ccV2F_T2F *vertices
 -(id)initWithStrikePoint:(CGPoint)source strikePoint2:(CGPoint)destination duration:(ccTime)duration fadeDuration:(ccTime)fadeDuration texture:(CCTexture2D *)texture {
     
     if (self = [super init]) {
-		self.shaderProgram = [[CCShaderCache sharedShaderCache] programForKey:kCCShader_Position_uColor];
+		self.shaderProgram = [[CCShaderCache sharedShaderCache] programForKey:kCCShader_PositionTexture_uColor];
         _colorLocation = glGetUniformLocation( self.shaderProgram.program, "u_color");
 
         _displayedColor = _realColor = ccWHITE;
@@ -131,7 +131,7 @@ void ccVertexTexLineToPolygon(CGPoint *points, float stroke, ccV2F_T2F *vertices
 
         _blendFunc = (ccBlendFunc) {CC_BLEND_SRC, CC_BLEND_DST};
 
-        _texture = texture;
+        _texture = [texture retain];
         _opacityModifyRGB = NO;
         
         strikeSource_ = source;
