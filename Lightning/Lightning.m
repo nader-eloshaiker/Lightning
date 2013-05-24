@@ -102,12 +102,12 @@ void ccVertexTexLineToPolygon(CGPoint *points, float stroke, ccV2F_T2F *vertices
 
 +(id)lightningWithStrikePoint:(CGPoint)source strikePoint2:(CGPoint)destination duration:(ccTime)duration fadeDuration:(ccTime)fadeDuration textureName:(NSString *)texturename {
     CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:texturename];
-    return [[self alloc] initWithStrikePoint:source strikePoint2:destination duration:duration fadeDuration:fadeDuration texture:texture];
+    return [[[self alloc] initWithStrikePoint:source strikePoint2:destination duration:duration fadeDuration:fadeDuration texture:texture] autorelease];
 }
 
 +(id)lightningWithStrikePoint:(CGPoint)source strikePoint2:(CGPoint)destination duration:(ccTime)duration fadeDuration:(ccTime)fadeDuration texture:(CCTexture2D *)texture {
     
-    return [[self alloc] initWithStrikePoint:source strikePoint2:destination duration:duration fadeDuration:fadeDuration texture:texture];
+    return [[[self alloc] initWithStrikePoint:source strikePoint2:destination duration:duration fadeDuration:fadeDuration texture:texture] autorelease];
 }
 
 -(id)initWithStrikePoint:(CGPoint)source strikePoint2:(CGPoint)destination duration:(ccTime)duration fadeDuration:(ccTime)fadeDuration textureName:(NSString *)texturename {
